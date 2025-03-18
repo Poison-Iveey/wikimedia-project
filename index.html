@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <div id="banner">
+        <h1 id="banner-text">Space Exploration is the Future!</h1>
+        <img id="banner-img" src="https://i.pinimg.com/736x/dc/fe/cd/dcfecdf6d99f028ced5bd2c24635a4a2.jpg" alt="Astronaut">
+    </div>
+
+    <form>
+        <label for="colorPicker">Change Color:</label>
+        <input type="color" id="colorPicker">
+        
+        <label for="textInput">Change Text:</label>
+        <input type="text" id="textInput" placeholder="We need more Space!">
+
+        <label for="imageSelect">Change Image:</label>
+        <select id="imageSelect">
+            <option value="https://i.pinimg.com/736x/b8/86/1a/b8861a1751c1c59b88ccaa215e86349f.jpg">Blast off!</option>
+            <option value="https://i.pinimg.com/736x/76/18/af/7618af1663693fceea4ceee110db0af7.jpg">The Galaxy</option>
+            <option value="https://i.pinimg.com/736x/7e/2a/a4/7e2aa4814d8188618aa27ad84a9a6e46.jpg">Space station</option>
+        </select>
+
+        <button type="button" onclick="updateBanner()">Apply Changes</button>
+    </form>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
